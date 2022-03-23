@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentDetailslayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    tools:context=".MainActivities.MainActivityP5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="2dp">
+
+            <ImageView
+                android:id="@+id/back_chapter_detialsp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="Registration Form"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toStartOf="@+id/studentDetailstext"
+            app:layout_constraintHorizontal_bias="0.607"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarp5">
+
+        </View>
+
+        <TextView
+            android:id="@+id/studentDetailstext"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="Student Details"
+            android:textAlignment="center"
+            android:textColor="#594099"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/view1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarp5" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarp5">
+
+        </View>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="7dp" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="378dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="textPersonName"
+            android:text="Andrew L. Hennen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/houseNoText"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:text="House no/Locality/Area"
+            app:layout_constraintTop_toBottomOf="@+id/currAddText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <TextView
+            android:id="@+id/cityText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="City"
+            app:layout_constraintTop_toBottomOf="@+id/houseNoEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <TextView
+            android:id="@+id/currAddText"
+            android:layout_width="188dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Current Address"
+            android:textAlignment="center"
+            android:textColor="#594099"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/view4"
+            app:layout_constraintTop_toBottomOf="@+id/incomeEditText"
+            tools:ignore="MissingConstraints" />
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/incomeEditText">
+
+        </View>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="12dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toStartOf="@id/currAddText"
+            app:layout_constraintTop_toBottomOf="@+id/incomeEditText">
+
+        </View>
+
+        <TextView
+            android:id="@+id/incomeText"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:text="Family Income"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNoParentEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <TextView
+            android:id="@+id/pinText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="PIN/ZIP code"
+            app:layout_constraintTop_toBottomOf="@+id/stateEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <EditText
+            android:id="@+id/phoneNoParentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:inputType="numberSigned|textPersonName|numberDecimal|phone"
+            android:text="+91 502-751-5968"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/phoneParentText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <TextView
+            android:id="@+id/fatherOccupationText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Father's Occupation"
+            app:layout_constraintTop_toBottomOf="@+id/fatherNameEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <EditText
+            android:id="@+id/fatherNameEditText"
+            android:layout_width="378dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:inputType="none"
+            android:background="@drawable/stroke_box"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Andrew L. Hennen"
+            app:layout_constraintTop_toBottomOf="@+id/fatherNameText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <EditText
+            android:id="@+id/guardianEditText"
+            android:layout_width="378dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="none|textEmailSubject"
+            android:text="andrewlhennan@dayrep.com"
+            app:layout_constraintTop_toBottomOf="@+id/guardianMailText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <EditText
+            android:id="@+id/motherOccupationEditText"
+            android:layout_width="378dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:inputType="none"
+            android:text="Teacher"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/mothrsOccupationText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <EditText
+            android:id="@+id/motheNameEditText"
+            android:layout_width="378dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:inputType="none"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:text="Andrew L. Hennen"
+            app:layout_constraintTop_toBottomOf="@+id/motherNameText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <EditText
+            android:id="@+id/fatherOccupationEditText"
+            android:layout_width="378dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="none"
+            android:text="Engineer"
+            app:layout_constraintTop_toBottomOf="@+id/fatherOccupationText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/guardianMailText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Guardian's Email Id"
+            app:layout_constraintTop_toBottomOf="@+id/motherOccupationEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <TextView
+            android:id="@+id/fatherNameText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Father's Name"
+            app:layout_constraintTop_toBottomOf="@+id/parentalInfoText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <TextView
+            android:id="@+id/stateText"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="12dp"
+            android:text="State"
+            app:layout_constraintTop_toBottomOf="@+id/cityEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="378dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:text="Louisville"
+            app:layout_constraintTop_toBottomOf="@+id/cityText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <EditText
+            android:id="@+id/stateEditText"
+            android:layout_width="378dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+
+            android:inputType="textPersonName"
+            android:text="KY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stateText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/incomeEditText"
+            android:layout_width="378dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="numberSigned|number|textPersonName"
+            android:text="24 lakhs p.a"
+            app:layout_constraintTop_toBottomOf="@+id/incomeText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <EditText
+            android:id="@+id/pinEditText"
+            android:layout_width="378dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="textPersonName"
+            android:text="40299"
+            app:layout_constraintTop_toBottomOf="@+id/pinText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <EditText
+            android:id="@+id/houseNoEditText"
+            android:layout_width="378dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="textPersonName|textPostalAddress"
+            android:text="1084 Earnhardt drive"
+            app:layout_constraintTop_toBottomOf="@+id/houseNoText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <TextView
+            android:id="@+id/phoneParentText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Phone Number"
+            app:layout_constraintTop_toBottomOf="@+id/guardianEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <TextView
+            android:id="@+id/motherNameText"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:text="Mother's Name"
+            app:layout_constraintTop_toBottomOf="@+id/fatherOccupationEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <TextView
+            android:id="@+id/mothrsOccupationText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Mother's Occupation"
+            app:layout_constraintTop_toBottomOf="@+id/motheNameEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <EditText
+            android:id="@+id/bloodGroupEditText"
+            android:layout_width="378dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPersonName"
+            android:text="A+"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/bloodgroupText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <EditText
+            android:id="@+id/phoneNoEditText"
+            android:layout_width="378dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:inputType="numberSigned|textPersonName|numberDecimal|phone"
+            android:text="+91 502-751-5968"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/phoneNoText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <EditText
+            android:id="@+id/dateOfBirthEditText"
+            android:layout_width="378dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:inputType="date|textPersonName"
+            android:text="12/06/2000"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/dateOfBirthText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/bloodgroupText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Blood Group"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/genderEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <TextView
+            android:id="@+id/dateOfBirthText"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:text="Date Of Birth"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/bloodGroupEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <TextView
+            android:id="@+id/mailIdText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Email Id"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfBirthEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <EditText
+            android:id="@+id/mailIdEditText"
+            android:layout_width="378dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="textPersonName|textEmailSubject"
+            android:text="andrewlhennen@dayrep.com"
+            android:fontFamily="@font/roboto_bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/mailIdText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <EditText
+            android:id="@+id/genderEditText"
+            android:layout_width="378dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPersonName"
+            android:text="Male"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/genderTextView"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <EditText
+            android:id="@+id/streamEditText"
+            android:layout_width="378dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPersonName"
+            android:text="Science"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintTop_toBottomOf="@+id/streamText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/prefferedClassText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Preffered Class"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gender"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/streamEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/phoneNoText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Phone Number"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/mailIdEditText"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <TextView
+            android:id="@+id/streamText"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_marginTop="12dp"
+            android:text="Stream"
+            android:textSize="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="56dp"
+
+            android:src="@drawable/nature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/studentDetailstext">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/parentalInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="Parental Information"
+            android:textAlignment="center"
+            android:textColor="#594099"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNoEditText"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNoEditText">
+
+        </View>
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toStartOf="@id/parentalInfoText"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNoEditText">
+
+        </View>
+
+        <TextView
+            android:id="@+id/permAddrText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:text="Permanent Address"
+            android:textAlignment="center"
+            android:textColor="#594099"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/view6"
+            app:layout_constraintTop_toBottomOf="@+id/pinEditText" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinEditText">
+
+        </View>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toStartOf="@id/permAddrText"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinEditText">
+
+        </View>
+
+        <TextView
+            android:id="@+id/perAddrhouseText"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="House no/Locality/Area"
+            app:layout_constraintTop_toBottomOf="@+id/permAddrText"
+            tools:layout_editor_absoluteX="2dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="378dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/stroke_box"
+
+            android:inputType="textPersonName"
+            android:text="1084 Earnhardt drive"
+            app:layout_constraintTop_toBottomOf="@+id/perAddrhouseText"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <TextView
+            android:id="@+id/perAddcityText"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:text="City"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/cityAddrEditText"
+            android:layout_width="378dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="textPersonName"
+            android:text="Louisville"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perAddcityText"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/statePerText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="State"
+            app:layout_constraintTop_toBottomOf="@+id/cityAddrEditText"
+            tools:layout_editor_absoluteX="7dp" />
+
+        <EditText
+            android:id="@+id/stateperEdit"
+            android:layout_width="378dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+
+            android:inputType="textPersonName"
+            android:text="KY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statePerText"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/pinPerText"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:text="PIN/ZIP code"
+            app:layout_constraintTop_toBottomOf="@+id/stateperEdit"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <EditText
+            android:id="@+id/pinPermEdit"
+            android:layout_width="378dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="textPersonName"
+            android:text="40299"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinPerText"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/emergencyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Emergency Contact"
+            android:textAlignment="center"
+            android:textColor="#594099"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/view8"
+            app:layout_constraintTop_toBottomOf="@+id/pinPermEdit" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinPermEdit">
+
+        </View>
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="90dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/underline"
+            android:backgroundTint="#594099"
+            app:layout_constraintEnd_toStartOf="@id/emergencyText"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinPermEdit">
+
+        </View>
+        <TextView
+            android:id="@+id/emergencyNameText"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:text="Name"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyText"
+            tools:layout_editor_absoluteX="41dp" />
+
+        <EditText
+            android:id="@+id/emergencyEditName"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:ems="10"
+            android:fontFamily="@font/roboto_bold"
+
+            android:inputType="textPersonName"
+            android:text="Andrew L. Hennen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyNameText"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/emergencyPhoneText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:text="Phone Number"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyEditName"
+            tools:layout_editor_absoluteX="67dp" />
+
+        <EditText
+            android:id="@+id/emergencyPhoneEdit"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+            android:ems="10"
+            android:layout_marginBottom="22dp"
+            android:fontFamily="@font/roboto_bold"
+
+            android:inputType="numberSigned|number"
+            android:text="+91 502-751-5968"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyPhoneText"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="378dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/stroke_box"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prefferedClassText"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/prefferedClassEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+
+                android:inputType="textPersonName"
+                android:text="XII"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtunassigned"
+                app:layout_constraintHorizontal_bias="0.122"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.523"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtunassigned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="UNASSIGNED"
+                android:textColor="#FF414D"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.476" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

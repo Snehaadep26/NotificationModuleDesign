@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nameRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Text View"
+            android:textColor="#191919"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/numberRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="Text View"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameRU" />
+
+        <TextView
+            android:id="@+id/classTVRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="Text View"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberRU" />
+
+        <TextView
+            android:id="@+id/dot1RU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="\u25CF"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/classTVRU"
+            app:layout_constraintStart_toEndOf="@+id/classTVRU"
+            app:layout_constraintTop_toTopOf="@+id/classTVRU" />
+
+        <TextView
+            android:id="@+id/subjectRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Text View"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/classTVRU"
+            app:layout_constraintStart_toEndOf="@+id/dot1RU"
+            app:layout_constraintTop_toTopOf="@+id/classTVRU" />
+
+        <TextView
+            android:id="@+id/reqSubOnRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="REJECTED ON"
+            android:textColor="#AEAEAE"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classTVRU" />
+
+        <TextView
+            android:id="@+id/dateRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="Text View"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reqSubOnRU" />
+
+        <TextView
+            android:id="@+id/dot2RU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="\u25CF"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dateRU"
+            app:layout_constraintStart_toEndOf="@+id/dateRU"
+            app:layout_constraintTop_toTopOf="@+id/dateRU" />
+
+        <TextView
+            android:id="@+id/timeRU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Text View"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dateRU"
+            app:layout_constraintStart_toEndOf="@+id/dot2RU"
+            app:layout_constraintTop_toTopOf="@+id/dateRU" />
+
+        <TextView
+            android:id="@+id/viewFormRUp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="VIEW FORM"
+            android:textColor="#1089FF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/numberRU"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/numberRU" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeRU">
+
+            <Button
+                android:id="@+id/rejectButtonRU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="9dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#28DF99"
+                android:background="@drawable/round_button"
+                android:text="CHANGE TO APPROVE" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

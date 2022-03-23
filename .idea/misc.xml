@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/drawable/arrow_back.xml" value="0.1735" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/drawable/ic_horizontal_rule.xml" value="0.1045" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/drawable/ic_keyboard.xml" value="0.183" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/drawable/round_button.xml" value="0.1" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/drawable/stroke_box.xml" value="0.176" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p10.xml" value="0.1859375" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p11.xml" value="0.16530797101449277" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p12.xml" value="0.25" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p2.xml" value="0.22" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p3.xml" value="0.12" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p5.xml" value="0.19" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/activity_main_p8.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/allnoti_cardp1.xml" value="0.33" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/category_cardp1.xml" value="0.33" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/fragment_page1.xml" value="0.1" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/fragment_pending_p3.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/fragment_pending_p8.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/fragment_rejected_p3.xml" value="0.2" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/fragment_rejected_p8.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/pending_cardp3.xml" value="0.2" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/pending_rejected_cardp34.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/recyclerview_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/reg_cardp11.xml" value="0.16530797101449277" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/rejected_cardp3.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Sneha/AndroidStudioProjects/NotificationModuleDesign/app/src/main/res/layout/today_cardp2.xml" value="0.15" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
